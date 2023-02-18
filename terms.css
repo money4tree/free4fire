@@ -1,0 +1,18 @@
+body {
+  background-image: url(Images/freebg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.termsAndConditions{
+  margin: 20px 20px ;
+  color: #a1a1a1 ;
+  background-color: #0000008a ;
+  padding: 20px 20px ;
+  border-radius: 15px;
+}
+
+.secu{
+  color: #6261616e ;
+}

